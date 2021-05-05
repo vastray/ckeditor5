@@ -1,0 +1,40 @@
+:root {
+	--ck-border-radius: 6px;
+	--ck-color-toolbar-border: #CBD3DE;
+	--ck-color-toolbar-background: #F6F8F9;
+
+	--ck-color-base-border: #CBD3DE;
+
+	--ck-color-engine-placeholder-text: #ABB9C6;
+
+	--ck-color-text: #333F4C;
+
+	--ck-color-button-default-hover-background: #ECEFF4;
+	--ck-color-button-default-active-background: #DDE4E9;
+	--ck-color-button-on-background: #DDE4E9;
+	--ck-color-button-on-hover-background: #CBD3DE;
+	--ck-color-button-on-active-background: #ABB9C6;
+
+	--ck-color-focus-border: rgba(37, 104, 254, 0.4);
+	--ck-color-focus-outer-shadow: rgba(37, 104, 254, 0.15);
+
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused {
+	box-shadow: var(--ck-focus-outer-shadow);
+	transition: border .2s, box-shadow .2s;
+}
+
+.ck.ck-button:active, .ck.ck-button:focus, a.ck.ck-button:active, a.ck.ck-button:focus {
+	border: none;
+	box-shadow: none;
+}
+.ck.ck-button {
+	border: none;
+	transition: background .2s;
+}
+
+.ck.ck-button.ck-on:not(.ck-disabled):active, a.ck.ck-button.ck-on:not(.ck-disabled):active,
+.ck.ck-button:not(.ck-disabled):active, a.ck.ck-button:not(.ck-disabled):active {
+	box-shadow: none;
+}
