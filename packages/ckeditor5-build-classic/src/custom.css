@@ -20,6 +20,11 @@
 
 }
 
+.ck.ck-editor {
+	display: flex;
+	flex-direction: column;
+}
+
 .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused {
 	box-shadow: var(--ck-focus-outer-shadow);
 	transition: border .2s, box-shadow .2s;
@@ -37,4 +42,46 @@
 .ck.ck-button.ck-on:not(.ck-disabled):active, a.ck.ck-button.ck-on:not(.ck-disabled):active,
 .ck.ck-button:not(.ck-disabled):active, a.ck.ck-button:not(.ck-disabled):active {
 	box-shadow: none;
+}
+
+/* Content */
+
+.ck-content {
+	font-size: 15px;
+}
+.ck-content p {
+	margin: 0 0 24px 0;
+	font-size: 15px;
+	padding: 0;
+}
+.ck-editor__editable_inline {
+	min-height: 200px;
+}
+.ck-content ul, .ck-content ol {
+	padding-left: 2em !important;
+	margin-bottom: 24px;
+	margin-left: 0 !important;
+	padding-right: 0;
+}
+.ck-content li {
+	list-style: inherit !important;
+	padding: 0;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+.ck-content h2, .ck-content h3, .ck-content h4 {
+	font-weight: 500;
+	padding: 0;
+	background: inherit;
+	color: #000;
+	margin: 48px 0 24px;
+}
+.ck-content h2 {
+	font-size: 24px;
+}
+.ck-content h3 {
+	font-size: 20px;
+}
+.ck-content h4 {
+	font-size: 18px;
 }
